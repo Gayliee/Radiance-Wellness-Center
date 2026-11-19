@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radiance Wellness Center | Aesthetics and Wellness in San Jose, Antique</title>
+<meta name="description" content="Expert aesthetic and wellness treatments by a licensed doctor in San Jose, Antique. Botox, fillers, threads, facials, brows, IV therapy, slimming, stem cell and hair transplant. Natural results, never overdone.">
+<meta name="theme-color" content="#F2EEE9">
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
+<link rel="apple-touch-icon" href="assets/logo-mark.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Radiance Wellness Center">
+<meta property="og:description" content="Expert aesthetic and wellness treatments by a licensed doctor in San Jose, Antique. Natural results, never overdone.">
+<!-- DEPLOY STEP: replace og:url and og:image with the live absolute URL before zipping -->
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Hanken+Grotesk:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<script>document.documentElement.className = 'js';</script>
+<style>
+:root{
+  --canvas:#F2EEE9;
+  --panel:#FAF7F3;
+  --panel-2:#ECE5DD;
+  --accent:#8A6232;
+  --accent-hover:#74522A;
+  --accent-muted:#D8B77F;
+  --text-primary:#2F2925;
+  --text-secondary:#5F554D;
+  --stone:#7E7E81;
+  --line:#DDD3C8;
+  --line-strong:#8F8073;
+  --ease-out:cubic-bezier(.22,1,.36,1);
+  --ease-in-out:cubic-bezier(.65,0,.35,1);
+  --tshadow:0 1px 0 rgba(255,253,250,.65),0 0 18px rgba(244,240,234,.95),0 0 46px rgba(244,240,234,.85);
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --wrap:min(1160px, calc(100% - 32px));
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:hidden;overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;overflow-x:hidden;overflow-x:clip;background:var(--canvas);color:var(--text-primary);font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased;animation:pageIn .9s var(--ease-out) both}
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
+img,svg,canvas{display:block}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3,h4{margin:0;font-weight:400}
+.sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:fixed;left:16px;top:-80px;z-index:100;background:var(--text-primary);color:var(--panel);padding:12px 18px;border-radius:12px;text-decoration:none;transition:top .3s var(--ease-out)}
+.skip:focus{top:16px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+main:focus{outline:none}
+
+/* ---------- the one environment ---------- */
+.env{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.env .glow{position:absolute;width:80vmax;height:80vmax;border-radius:50%;will-change:transform}
+.env .g1{left:-30vmax;top:-30vmax;background:radial-gradient(circle,rgba(230,201,148,.20),rgba(230,201,148,0) 62%);animation:drift1 74s var(--ease-in-out) -11s infinite alternate}
+.env .g2{right:-35vmax;bottom:-40vmax;background:radial-gradient(circle,rgba(255,255,255,.62),rgba(255,255,255,0) 60%);animation:drift2 92s var(--ease-in-out) -23s infinite alternate}
+.env .grain{position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32 0 0 0 0 .27 0 0 0 0 .23 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes drift1{from{transform:translate3d(0,0,0)}to{transform:translate3d(18vw,14vh,0)}}
+@keyframes drift2{from{transform:translate3d(0,0,0)}to{transform:translate3d(-16vw,-12vh,0)}}
+body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused!important}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;gap:28px;padding:14px max(16px, calc((100% - 1240px) / 2));background:rgba(244,240,234,.72);backdrop-filter:blur(14px) saturate(1.1);-webkit-backdrop-filter:blur(14px) saturate(1.1);border-bottom:1px solid rgba(221,211,200,.6)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.brand img{width:40px;height:auto}
+.wm{display:flex;flex-direction:column;line-height:1}
+.wm-1{font-family:var(--display);font-size:19px;letter-spacing:.3em;color:var(--text-primary)}
+.wm-2{font-family:var(--body);font-weight:600;font-size:8.5px;letter-spacing:.34em;color:var(--text-secondary);margin-top:5px}
+.nav-links{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-size:15px;color:var(--text-secondary);position:relative;padding:6px 0;transition:color .35s var(--ease-out)}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease-out)}
+.nav-links a:hover{color:var(--text-primary)}
+.nav-links a:hover::after{transform:scaleX(1)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;border:1px solid transparent;background:var(--accent);color:#FBF7F1;font:600 15px/1 var(--body);letter-spacing:.02em;text-decoration:none;cursor:pointer;box-shadow:0 12px 30px -14px rgba(138,98,50,.7);transition:background-color .4s var(--ease-out),transform .4s var(--ease-out),box-shadow .4s var(--ease-out),color .4s var(--ease-out),border-color .4s var(--ease-out)}
+.btn:hover{background:var(--accent-hover);transform:translateY(-1px);box-shadow:0 16px 34px -14px rgba(116,82,42,.75)}
+.btn-ghost{background:rgba(250,247,243,.55);color:var(--text-primary);border-color:var(--line-strong);box-shadow:none}
+.btn-ghost:hover{background:var(--panel);color:var(--text-primary);box-shadow:none}
+.btn-sm{min-height:40px;padding:0 20px;font-size:14px}
+.btn .arr{display:inline-block;transition:transform .4s var(--ease-out)}
+.btn:hover .arr{transform:translateX(3px)}
+@media (pointer:coarse){.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}.nav-links a{padding:12px 0}}
+
+/* ---------- hero: words on the left, the real front desk on the right ---------- */
+.hero{position:relative}
+.stage{position:relative;display:grid;grid-template-columns:minmax(0,1fr);overflow:hidden;background:radial-gradient(ellipse 70% 62% at 12% 10%,rgba(255,247,230,.95),rgba(255,247,230,0) 62%)}
+
+.kicker{font:400 12.5px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary)}
+.nw{white-space:nowrap}
+.h-hero{font-family:var(--display);line-height:1.04;letter-spacing:-.005em;color:var(--text-primary);text-wrap:balance}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+
+.hero-photo{position:relative;order:-1;margin:68px 0 0;aspect-ratio:4/3.1;max-width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 24%);mask-image:linear-gradient(to top,transparent 0,#000 24%)}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:28% 45%;animation:photoIn 1.8s var(--ease-out) both}
+@keyframes photoIn{from{opacity:0;transform:scale(1.035)}to{opacity:1;transform:none}}
+.hero-copy{padding:8px 20px 64px}
+.hero-copy .kicker{margin-bottom:16px}
+.hero-copy .h-hero{font-size:clamp(38px,10vw,52px);max-width:11ch}
+.hero-copy .sub{margin-top:18px;max-width:40ch;color:var(--text-secondary);font-size:17px}
+.hero-copy .cta-row{justify-content:flex-start;margin-top:28px}
+.hero-copy>*{animation:heroIn 1s var(--ease-out) both;animation-delay:calc(var(--i,0)*110ms + 120ms)}
+@keyframes heroIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.trust{display:grid;grid-template-columns:1fr;gap:14px;list-style:none;margin:36px 0 0;padding:24px 0 0;border-top:1px solid var(--line);max-width:600px}
+.trust li{display:flex;align-items:center;gap:12px;font-size:14.5px;line-height:1.45;color:var(--text-secondary)}
+.trust svg{flex:0 0 32px;width:32px;height:32px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+
+@media (min-width:861px){
+  .stage{grid-template-columns:minmax(0,48fr) minmax(0,52fr);min-height:clamp(640px,92vh,840px)}
+  .hero-copy{align-self:center;padding:112px 28px 72px clamp(24px,7vw,128px)}
+  .hero-copy .h-hero{font-size:clamp(44px,4.2vw,66px);max-width:none}
+  .hero-copy .sub{font-size:clamp(17px,1.35vw,20px)}
+  .hero-photo{order:0;margin:0;aspect-ratio:auto;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 16%),linear-gradient(to top,transparent 0,#000 12%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 16%),linear-gradient(to top,transparent 0,#000 12%);mask-composite:intersect}
+}
+@media (min-width:1360px){
+  .trust{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+  .trust li{align-items:flex-start;padding:0 16px;border-left:1px solid var(--line)}
+  .trust li:first-child{padding-left:0;border-left:0}
+}
+
+/* ---------- shared section bits ---------- */
+section{scroll-margin-top:84px}
+.wrap{width:var(--wrap);margin:0 auto}
+.sec{padding:clamp(96px,12vw,168px) 0;position:relative}
+.eyebrow{display:flex;align-items:center;gap:12px;font:400 12px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:22px}
+.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;border:1.5px solid var(--accent)}
+.h2{font-family:var(--display);font-size:clamp(36px,4.5vw,62px);line-height:1.08;color:var(--text-primary);text-wrap:balance}
+.lede{color:var(--text-secondary);font-size:18px;max-width:52ch}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out);transition-delay:calc(var(--i,0)*90ms)}
+[data-reveal].in .rv{opacity:1;transform:none}
+[data-reveal].settled .rv{transition-delay:0s}
+.no-js .rv{opacity:1;transform:none}
+
+/* self-drawing line icons */
+.ico{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.ico *{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.6s var(--ease-out);transition-delay:calc(var(--i,0)*90ms + 200ms)}
+[data-reveal].in .ico *{stroke-dashoffset:0}
+[data-reveal].settled .ico *{transition-delay:0s}
+.no-js .ico *{stroke-dashoffset:0}
+.ring{position:relative;display:grid;place-items:center;border-radius:50%;border:1px solid var(--line-strong);color:var(--accent);background:radial-gradient(circle at 35% 30%,#FFFDF9,var(--panel) 70%)}
+.ring::after{content:"";position:absolute;inset:-7px;border-radius:50%;box-shadow:0 0 0 1px rgba(216,183,127,.35),0 0 28px 4px rgba(216,183,127,.32);opacity:0;transition:opacity .6s var(--ease-out)}
+.live .ring.pulse::after{animation:ringPulse 6.4s var(--ease-in-out) infinite;animation-delay:calc(var(--i,0)*-1.6s - 1.2s)}
+@keyframes ringPulse{0%,100%{opacity:0}50%{opacity:.85}}
+.divider{width:min(320px,60vw);margin:0 auto;color:var(--accent-muted)}
+.divider svg{width:100%;height:auto;fill:none;stroke:currentColor;stroke-width:1}
+.divider ellipse{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2s var(--ease-out)}
+.divider ellipse:nth-child(2){transition-delay:.25s}
+.divider ellipse:nth-child(3){transition-delay:.5s}
+.divider.in ellipse{stroke-dashoffset:0}
+.no-js .divider ellipse{stroke-dashoffset:0}
+
+/* ---------- promise ---------- */
+.promise-head{text-align:center;margin-bottom:clamp(48px,6vw,80px)}
+.promise-head .eyebrow{justify-content:center}
+.promise-head .h2{max-width:14ch;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px)}
+.card{position:relative;padding:38px 32px 36px;border-radius:28px;background:linear-gradient(180deg,rgba(250,247,243,.92),rgba(250,247,243,.66));border:1px solid rgba(221,211,200,.85);box-shadow:0 30px 60px -40px rgba(80,60,40,.35)}
+.card .ring{width:76px;height:76px;margin-bottom:28px}
+.card .ring svg{width:40px;height:40px}
+.card h3{font-family:var(--display);font-size:26px;line-height:1.2;margin-bottom:12px}
+.card p{color:var(--text-secondary);max-width:34ch}
+
+/* ---------- treatments ---------- */
+.treat-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(40px,6vw,96px);align-items:start}
+.treat-side{position:sticky;top:120px}
+.treat-side .h2{max-width:12ch}
+.treat-side .lede{margin-top:22px}
+.ask{display:inline-flex;align-items:baseline;gap:8px;margin-top:30px;color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(138,98,50,.35);padding-bottom:4px;transition:border-color .4s var(--ease-out)}
+.ask:hover{border-color:var(--accent)}
+.treat-list{position:relative;padding-left:clamp(0px,3vw,44px)}
+.hairline{position:absolute;left:0;top:0;width:40px;height:100%;color:var(--accent-muted);overflow:visible}
+.hairline path{fill:none;stroke:currentColor;stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:1}
+.group+.group{margin-top:56px}
+.group-label{font:400 12px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--text-secondary);padding-bottom:16px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.treat{list-style:none}
+.treat-list ul{margin:0;padding:0}
+.treat-in{display:grid;grid-template-columns:64px 1fr;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid var(--line);transition:transform .5s var(--ease-out)}
+.treat-in:hover{transform:translateX(6px)}
+.treat .ring{width:64px;height:64px}
+.treat .ring svg{width:34px;height:34px}
+.treat-in:hover .ring::after{opacity:.9}
+.treat h4{display:flex;align-items:baseline;gap:14px;font-family:var(--display);font-size:clamp(23px,2vw,28px);line-height:1.2;margin:4px 0 6px}
+.treat h4 .num{font:400 12px/1 var(--mono);letter-spacing:.1em;color:var(--accent)}
+.treat p{color:var(--text-secondary);max-width:46ch}
+
+/* ---------- visit (the drop fills by itself and lights the steps) ---------- */
+.visit{--hp:0}
+.visit-head{text-align:center;margin-bottom:56px}
+.visit-head .eyebrow{justify-content:center}
+.visit-head .h2{max-width:16ch;margin:0 auto}
+.hold-wrap{display:flex;flex-direction:column;align-items:center;gap:30px;padding-top:28px;margin-bottom:64px}
+.hold{position:relative;display:grid;place-items:center;width:132px;height:132px;border-radius:50%;background:radial-gradient(circle at 40% 34%,#FFFDF8,var(--panel) 62%,#EFE7DD);box-shadow:0 24px 50px -26px rgba(110,80,40,.55),inset 0 0 0 1px rgba(143,128,115,.55)}
+.hold::before{content:"";position:absolute;inset:-18px;border-radius:50%;background:radial-gradient(circle,rgba(240,203,126,.55),rgba(240,203,126,0) 68%);opacity:var(--hp);pointer-events:none}
+.hold-drop{position:relative;width:46px;height:58px;margin:0 auto;transform:translateY(calc(var(--hp)*3px)) scale(calc(1 + var(--hp)*.06))}
+.hold-prog{position:absolute;inset:-6px;width:calc(100% + 12px);height:calc(100% + 12px);transform:rotate(-90deg);pointer-events:none}
+.hold-prog circle{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--hp))}
+.hold-rings{position:absolute;inset:0;pointer-events:none}
+.hold-rings i{position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--accent-muted);opacity:calc(var(--hp)*(1 - var(--n)*.24));transform:scale(calc(1 + var(--hp)*var(--n)*.5));transition:opacity 1.4s var(--ease-out)}
+.done .hold-rings i{opacity:0}
+.hold-rings i:nth-child(1){--n:1}
+.hold-rings i:nth-child(2){--n:2}
+.hold-rings i:nth-child(3){--n:3}
+.hold-rings b{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(216,183,127,.8);opacity:0}
+.live .hold-rings b{animation:breathe 4.6s var(--ease-out) -1.4s infinite}
+@keyframes breathe{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+.hold-done{font-family:var(--display);font-size:22px;color:var(--text-primary);text-align:center;opacity:0;transform:translateY(8px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
+.done .hold-done{opacity:1;transform:none}
+.steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,32px);list-style:none;margin:0;padding:0}
+.steps::before,.steps::after{content:"";position:absolute;top:27px;left:16.6%;right:16.6%;height:1px;background:var(--line)}
+.steps::after{background:linear-gradient(90deg,var(--accent-muted),var(--accent));transform:scaleX(var(--hp));transform-origin:left}
+.step{position:relative;text-align:center;padding:0 8px}
+.badge{position:relative;z-index:1;display:grid;place-items:center;width:56px;height:56px;margin:0 auto 22px;border-radius:50%;border:1px solid var(--line-strong);background:var(--canvas);font:400 13px/1 var(--mono);color:var(--text-secondary);transition:background-color .6s var(--ease-out),color .6s var(--ease-out),border-color .6s var(--ease-out),box-shadow .6s var(--ease-out)}
+.step h3{font-family:var(--display);font-size:25px;line-height:1.2;margin-bottom:10px;color:var(--text-secondary);transition:color .6s var(--ease-out)}
+.step p{color:var(--text-secondary);max-width:30ch;margin:0 auto}
+.step.lit .badge{background:var(--accent);border-color:var(--accent);color:#FBF7F1;box-shadow:0 0 0 6px rgba(216,183,127,.25),0 0 30px rgba(216,183,127,.55)}
+.step.lit h3{color:var(--text-primary)}
+
+/* ---------- clinic ---------- */
+.clinic-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:center}
+.still{position:relative;aspect-ratio:4/5;border-radius:32px;overflow:hidden;background:
+  radial-gradient(ellipse 80% 60% at 20% 8%,rgba(255,247,230,.95),rgba(255,247,230,0) 62%),
+  linear-gradient(180deg,#F7F3EE 0%,#F0EAE3 58%,#E4DACF 100%);box-shadow:0 40px 80px -50px rgba(80,60,40,.5),inset 0 0 0 1px rgba(221,211,200,.9)}
+.still canvas{position:absolute;inset:0;width:100%;height:100%}
+.still .mark{position:absolute;left:31%;top:22%;width:38%;height:auto;filter:drop-shadow(0 12px 30px rgba(216,183,127,.45))}
+.still .chip{position:absolute;left:20px;bottom:20px;right:20px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:12px 16px;border-radius:14px;background:rgba(250,247,243,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(221,211,200,.9);font:400 11.5px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary)}
+.clinic-copy .h2{max-width:13ch}
+.clinic-copy .lede{margin-top:22px}
+.facts{margin:34px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.facts li{display:flex;align-items:baseline;gap:18px;padding:16px 0;border-bottom:1px solid var(--line)}
+.facts .k{flex:0 0 92px;font:400 11.5px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--text-secondary)}
+.facts .v{color:var(--text-primary)}
+.clinic-copy .cta-row{justify-content:flex-start}
+.motes{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.mote{position:absolute;bottom:-10px;left:var(--x);width:4px;height:4px;border-radius:50%;background:rgba(216,183,127,.9);box-shadow:0 0 10px rgba(216,183,127,.8);opacity:0}
+.live .mote{animation:rise var(--t) linear infinite;animation-delay:var(--d)}
+@keyframes rise{0%{transform:translate3d(0,0,0);opacity:0}15%{opacity:.7}85%{opacity:.5}100%{transform:translate3d(14px,-62vh,0);opacity:0}}
+
+/* ---------- clients ---------- */
+.clients-head{margin-bottom:clamp(36px,4vw,56px)}
+.clients-head .h2{max-width:14ch}
+.gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-flow:dense;gap:clamp(10px,1.2vw,16px)}
+.shot{position:relative;margin:0;aspect-ratio:3/4;max-width:100%;overflow:hidden;border-radius:22px;background:var(--panel-2);box-shadow:0 30px 60px -44px rgba(80,60,40,.55)}
+.shot.wide{grid-column:span 2;aspect-ratio:auto}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:transform 1.4s var(--ease-out)}
+.shot:hover img{transform:scale(1.04)}
+.shot::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,253,248,.55);pointer-events:none}
+@media (max-width:760px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.shot{border-radius:18px}.shot.wide{aspect-ratio:3/2}}
+
+/* ---------- faq ---------- */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);gap:clamp(40px,6vw,96px);align-items:start}
+.faq-side{position:sticky;top:120px}
+.faq-side .h2{max-width:12ch}
+.orbit{width:120px;height:120px;margin-top:40px;color:var(--accent-muted)}
+.orbit svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1}
+.live .orbit svg{animation:spin 48s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.faq-list{border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0;cursor:pointer;list-style:none}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary h3{font-family:var(--display);font-size:clamp(21px,1.9vw,26px);line-height:1.25}
+.plus{position:relative;flex:0 0 34px;height:34px;border-radius:50%;border:1px solid var(--line-strong);transition:background-color .4s var(--ease-out),transform .5s var(--ease-out)}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;margin:-.75px 0 0 -6px;background:var(--text-primary);transition:transform .5s var(--ease-out)}
+.plus::after{transform:rotate(90deg)}
+details[open] .plus{transform:rotate(180deg);background:var(--panel)}
+details[open] .plus::after{transform:rotate(0deg)}
+.ans{padding:0 56px 28px 0;color:var(--text-secondary);max-width:62ch}
+details[open] .ans{animation:ansIn .6s var(--ease-out)}
+@keyframes ansIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---------- book ---------- */
+.book-card{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,72px);padding:clamp(28px,5vw,72px);border-radius:36px;background:linear-gradient(160deg,rgba(250,247,243,.95),rgba(236,229,221,.85));border:1px solid rgba(221,211,200,.95);box-shadow:0 50px 100px -60px rgba(80,60,40,.55);overflow:hidden}
+.book-card .h2{max-width:11ch}
+.book-copy .lede{margin-top:22px}
+.contact{list-style:none;margin:34px 0 0;padding:0}
+.contact li{display:flex;align-items:baseline;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+.contact .k{flex:0 0 74px;font:400 11px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--text-secondary)}
+.contact a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(138,98,50,.35)}
+.contact a:hover{border-color:var(--accent)}
+form{position:relative;display:grid;gap:18px;align-content:start}
+.field{display:grid;gap:8px}
+.field label{font:600 14px/1.3 var(--body);color:var(--text-primary)}
+.field input,.field select,.field textarea{width:100%;min-height:50px;padding:12px 16px;border-radius:14px;border:1px solid var(--line-strong);background:rgba(255,253,250,.85);font:400 16px/1.4 var(--body);color:var(--text-primary);transition:border-color .35s var(--ease-out),box-shadow .35s var(--ease-out),background-color .35s var(--ease-out)}
+.field textarea{min-height:96px;resize:vertical}
+.field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%235F554D' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.field input::placeholder,.field textarea::placeholder{color:#857A71}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(216,183,127,.35);background:#FFFDFA}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+form .btn{margin-top:6px;width:100%}
+.form-note{font-size:14px;color:var(--text-secondary)}
+.success{display:none;padding:26px;border-radius:20px;background:rgba(255,253,250,.9);border:1px solid var(--accent-muted);box-shadow:0 0 0 6px rgba(216,183,127,.18)}
+.success.show{display:block;animation:ansIn .7s var(--ease-out)}
+.success h3{font-family:var(--display);font-size:26px;margin-bottom:10px}
+.success p{color:var(--text-secondary)}
+.success textarea{display:none;width:100%;min-height:120px;margin-top:14px;padding:12px;border-radius:12px;border:1px solid var(--line-strong);font:400 14px/1.5 var(--mono);color:var(--text-primary);background:var(--panel)}
+.success.manual textarea{display:block}
+.success .cta-row{justify-content:flex-start;margin-top:18px}
+
+/* ---------- footer ---------- */
+footer{padding:72px 0 40px;border-top:1px solid var(--line)}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px;align-items:start}
+.foot .brand img{width:52px}
+.foot .fh{font:400 11.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:14px}
+.foot p,.foot a{font-size:15px;color:var(--text-primary)}
+.foot .links a{text-decoration:none;border-bottom:1px solid var(--line)}
+.foot .links a:hover{border-color:var(--accent)}
+.foot .links{display:grid;gap:8px;justify-items:start}
+.fine{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:13.5px;color:var(--text-secondary)}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .nav-links{display:none}
+  .treat-grid,.faq-grid,.clinic-grid,.book-card{grid-template-columns:1fr}
+  .treat-side,.faq-side{position:static}
+  .treat-list{padding-left:0}
+  .hairline{display:none}
+  .orbit{display:none}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .cards{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:40px}
+  .steps::before,.steps::after{display:none}
+  .still{aspect-ratio:4/4.4}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .wm-1{font-size:16px}
+  .wm-2{font-size:7.5px}
+  .brand img{width:34px}
+  .row2{grid-template-columns:1fr}
+  .treat-in{grid-template-columns:52px 1fr;gap:16px}
+  .treat .ring{width:52px;height:52px}
+  .treat .ring svg{width:28px;height:28px}
+  .ans{padding-right:0}
+  .still .chip{display:none}
+  .still .mark{top:16%}
+  .foot{grid-template-columns:1fr}
+  .book-card{border-radius:26px}
+}
+
+/* reduced motion, honored completely */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important;transition-delay:0s!important}
+  .rv{opacity:1;transform:none}
+  .ico *,.divider ellipse,.hairline path{stroke-dashoffset:0!important}
+  .treat-in:hover,.shot:hover img{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="env" aria-hidden="true"><span class="glow g1"></span><span class="glow g2"></span><span class="grain"></span></div>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Radiance Wellness Center, back to top">
+    <img src="assets/logo-mark.webp" width="40" height="39" alt="">
+    <span class="wm" aria-hidden="true"><span class="wm-1">RADIANCE</span><span class="wm-2">WELLNESS CENTER</span></span>
+  </a>
+  <nav aria-label="Main">
+    <ul class="nav-links">
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#visit">Your visit</a></li>
+      <li><a href="#clinic">The clinic</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-sm" href="#book">Book</a>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <section class="hero" id="top" aria-label="Welcome">
+    <div class="stage">
+      <div class="hero-copy">
+        <p class="kicker" style="--i:0">Radiance Wellness Center · <span class="nw">San Jose, Antique</span></p>
+        <h1 class="h-hero" style="--i:1">Your glow, gently brought back.</h1>
+        <p class="sub" style="--i:2">Expert aesthetic and wellness care with a gentle, honest approach. Natural results, never overdone.</p>
+        <div class="cta-row" style="--i:3">
+          <a class="btn" href="#book">Book a consultation <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#treatments">See treatments</a>
+        </div>
+        <ul class="trust" style="--i:4">
+          <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M15 8V19C15 25 19 29.5 24 29.5C29 29.5 33 25 33 19V8"/><path d="M24 29.5V34C24 38.5 27 41.5 31 41.5C35 41.5 37.5 38.5 37.5 35"/><circle cx="37.5" cy="32" r="3"/><path d="M12.5 8H17.5M30.5 8H35.5"/></svg><span>Treatments by a licensed doctor</span></li>
+          <li><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 13C26.5 17.5 29.5 20 29.5 24.5A5.5 5.5 0 0 1 18.5 24.5C18.5 20 21.5 17.5 24 13Z"/></svg><span>Nine aesthetic and wellness treatments</span></li>
+          <li><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 14V24L30.5 28"/></svg><span>Open Monday to Saturday, 10 AM to 6 PM</span></li>
+        </ul>
+      </div>
+      <figure class="hero-photo"><img src="assets/hero-front-desk.webp" width="1920" height="1440" fetchpriority="high" decoding="async" alt="A Radiance staff member welcomes a client at the front desk, under the clinic's glowing logo"></figure>
+    </div>
+  </section>
+
+  <section class="sec" id="promise" aria-labelledby="promise-h">
+    <div class="wrap">
+      <div class="promise-head" data-reveal>
+        <p class="eyebrow rv">Our promise</p>
+        <h2 class="h2 rv" id="promise-h">Natural first.</h2>
+      </div>
+      <div class="cards" data-reveal data-live>
+        <article class="card rv">
+          <div class="ring pulse" style="--i:0"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M24 9C28.5 16.5 33.5 20.5 33.5 27.5A9.5 9.5 0 0 1 14.5 27.5C14.5 20.5 19.5 16.5 24 9Z"/><path pathLength="1" d="M19.5 28.5C20 31 21.8 32.6 24 33"/></svg></div>
+          <h3>Natural, never overdone.</h3>
+          <p>We start small and build slowly. You leave looking like yourself, only fresher.</p>
+        </article>
+        <article class="card rv">
+          <div class="ring pulse" style="--i:1"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M15 8V19C15 25 19 29.5 24 29.5C29 29.5 33 25 33 19V8"/><path pathLength="1" d="M24 29.5V34C24 38.5 27 41.5 31 41.5C35 41.5 37.5 38.5 37.5 35"/><circle pathLength="1" cx="37.5" cy="32" r="3"/><path pathLength="1" d="M12.5 8H17.5M30.5 8H35.5"/></svg></div>
+          <h3>A licensed doctor.</h3>
+          <p>Your treatment is done by a licensed doctor who takes time to understand your skin and your goals.</p>
+        </article>
+        <article class="card rv">
+          <div class="ring pulse" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M10 14C10 11 12 9 15 9H33C36 9 38 11 38 14V26C38 29 36 31 33 31H22L15 38V31C12 31 10 29 10 26Z"/><path pathLength="1" d="M17 18H31"/><path pathLength="1" d="M17 23H26"/></svg></div>
+          <h3>Honest advice.</h3>
+          <p>We explain what each treatment does and how it feels before we begin. If you don't need it, we'll say so.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="treatments" aria-labelledby="treat-h">
+    <div class="wrap treat-grid">
+      <div class="treat-side" data-reveal>
+        <p class="eyebrow rv">Treatments</p>
+        <h2 class="h2 rv" id="treat-h">Nine ways to feel like yourself again.</h2>
+        <p class="lede rv">Every treatment starts with a talk with our doctor, so you only get what suits your skin and your goals.</p>
+        <a class="ask rv" href="https://m.me/61561401756525" target="_blank" rel="noopener">Not sure which one? Ask us on Messenger <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="treat-list">
+        <svg class="hairline" viewBox="0 0 40 1000" preserveAspectRatio="none" aria-hidden="true"><path id="hairline-path" pathLength="1" d="M20 0C4 120 36 220 18 340C2 460 34 560 20 680C8 790 30 900 20 1000"/></svg>
+
+        <div class="group" data-reveal>
+          <h3 class="group-label rv">Face</h3>
+          <ul>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M14.5 33.5L30 18L34 22L18.5 37.5Z"/><path pathLength="1" d="M32 20L37.5 14.5"/><path pathLength="1" d="M35 12L40 17"/><path pathLength="1" d="M16.5 35.5L9 43"/><path pathLength="1" d="M21.5 30.5L23.5 32.5M25.5 26.5L27.5 28.5"/></svg></div>
+              <div><h4><span class="num">01</span>Botox</h4><p>Softens frown lines, forehead lines and crow's feet. A quick visit, and most people go straight back to their day.</p></div>
+            </div></li>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M9 25C13 20 18.5 18 24 21.5C29.5 18 35 20 39 25C35 31.5 29.5 34 24 34C18.5 34 13 31.5 9 25Z"/><path pathLength="1" d="M9 25C16 27.5 32 27.5 39 25"/><path pathLength="1" d="M24 8V13M21.5 10.5H26.5"/></svg></div>
+              <div><h4><span class="num">02</span>Hyaluronic Fillers</h4><p>Restores soft volume to lips, cheeks and under-eyes, and smooths deeper lines.</p></div>
+            </div></li>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M7 35C13 23 19 35 25 23C29.5 14 35 16 39 12.5"/><path pathLength="1" d="M38 13.5L43 8.5"/><circle pathLength="1" cx="42" cy="9.5" r="1.4"/><path pathLength="1" d="M10 40C16 37 22 38 28 35"/></svg></div>
+              <div><h4><span class="num">03</span>Threads</h4><p>Lifts and firms loose skin on the face and jawline, without surgery.</p></div>
+            </div></li>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M24 7.5C33 7.5 38 14.5 38 24C38 34 31 41 24 41C17 41 10 34 10 24C10 14.5 15 7.5 24 7.5Z"/><path pathLength="1" d="M16 23C17.5 25 20 25 21.5 23"/><path pathLength="1" d="M26.5 23C28 25 30.5 25 32 23"/><path pathLength="1" d="M20 32C22.5 34 25.5 34 28 32"/></svg></div>
+              <div><h4><span class="num">04</span>Facials</h4><p>Deep cleansing and care for clear, bright, healthy-looking skin.</p></div>
+            </div></li>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M7 20C11 15 17 14 21.5 17"/><path pathLength="1" d="M26.5 17C31 14 37 15 41 20"/><path pathLength="1" d="M9.5 28C12.5 25 18.5 25 21.5 28C18.5 31 12.5 31 9.5 28Z"/><path pathLength="1" d="M26.5 28C29.5 25 35.5 25 38.5 28C35.5 31 29.5 31 26.5 28Z"/></svg></div>
+              <div><h4><span class="num">05</span>Brows</h4><p>Soft, natural-looking brows shaped to suit your face.</p></div>
+            </div></li>
+          </ul>
+        </div>
+
+        <div class="group" data-reveal>
+          <h3 class="group-label rv">Body and wellness</h3>
+          <ul>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M24 3V6.5"/><path pathLength="1" d="M17 6.5H31V23.5C31 27.5 28 30 24 30C20 30 17 27.5 17 23.5Z"/><path pathLength="1" d="M17 14H31"/><path pathLength="1" d="M24 30V34"/><path pathLength="1" d="M21.5 34H26.5V39.5H21.5Z"/><path pathLength="1" d="M24 39.5V45"/></svg></div>
+              <div><h4><span class="num">06</span>IV Therapy</h4><p>Vitamins and fluids through a drip while you rest, under our doctor's care.</p></div>
+            </div></li>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M14 6C20 16 20 32 14 42"/><path pathLength="1" d="M34 6C28 16 28 32 34 42"/><path pathLength="1" d="M11 24C17.5 27.5 30.5 27.5 37 24"/><path pathLength="1" d="M20 26.6V29M24 27V29.4M28 26.6V29"/></svg></div>
+              <div><h4><span class="num">07</span>Slimming</h4><p>Treatments that help shape and contour stubborn areas.</p></div>
+            </div></li>
+          </ul>
+        </div>
+
+        <div class="group" data-reveal>
+          <h3 class="group-label rv">Renewal</h3>
+          <ul>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle pathLength="1" cx="18.5" cy="24" r="10"/><circle pathLength="1" cx="29.5" cy="24" r="10"/><circle pathLength="1" cx="17" cy="23" r="2.6"/><circle pathLength="1" cx="31" cy="25" r="2.6"/></svg></div>
+              <div><h4><span class="num">08</span>Stem Cell</h4><p>Treatments that support your skin's own renewal. Ask us which option suits you.</p></div>
+            </div></li>
+            <li class="treat rv"><div class="treat-in">
+              <div class="ring"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M7 39C13 31 35 31 41 39"/><path pathLength="1" d="M15.5 33.5C14.5 24 18.5 15 27 8.5"/><path pathLength="1" d="M22 32C22 23 26 15 33.5 10.5"/><path pathLength="1" d="M28.5 32C29.5 24.5 33.5 18.5 40 15"/></svg></div>
+              <div><h4><span class="num">09</span>Hair Transplant</h4><p>Moves your own hair to thinning areas for fuller, natural-looking hair.</p></div>
+            </div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="visit-head" data-reveal>
+        <p class="eyebrow rv">Your first visit</p>
+        <h2 class="h2 rv" id="visit-h">Your first visit, step by step.</h2>
+      </div>
+
+      <div class="hold-wrap" data-live>
+        <div class="hold" aria-hidden="true">
+          <svg class="hold-prog" viewBox="0 0 144 144"><circle pathLength="1" cx="72" cy="72" r="70"/></svg>
+          <span class="hold-rings"><i></i><i></i><i></i><b></b></span>
+          <svg class="hold-drop" viewBox="0 0 46 58">
+            <defs><radialGradient id="dg" cx="38%" cy="58%" r="70%"><stop offset="0" stop-color="#FFF5DC"/><stop offset=".38" stop-color="#F1CB7E"/><stop offset=".78" stop-color="#C9974B"/><stop offset="1" stop-color="#9C7036"/></radialGradient></defs>
+            <path d="M23 2C26 12 41 23 41 37A18 18 0 0 1 5 37C5 23 20 12 23 2Z" fill="url(#dg)" stroke="rgba(255,242,214,.7)" stroke-width="1"/>
+            <ellipse cx="15.5" cy="34" rx="3.6" ry="6" fill="#fff" fill-opacity=".85" transform="rotate(-18 15.5 34)"/>
+          </svg>
+        </div>
+        <p class="hold-done">That's it. Simple, calm and clear.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step"><span class="badge" aria-hidden="true">01</span><h3>Message us</h3><p>Send us a message on Facebook and pick a day that works for you.</p></li>
+        <li class="step"><span class="badge" aria-hidden="true">02</span><h3>Talk with the doctor</h3><p>We look at your skin, listen to your goals and explain your options and prices.</p></li>
+        <li class="step"><span class="badge" aria-hidden="true">03</span><h3>Your treatment</h3><p>Done at your pace, with simple aftercare tips to take home.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="clinic" aria-labelledby="clinic-h" data-live>
+    <div class="motes" aria-hidden="true"><i class="mote" style="--x:8%;--t:19s;--d:-3s"></i><i class="mote" style="--x:22%;--t:24s;--d:-11s"></i><i class="mote" style="--x:37%;--t:21s;--d:-6s"></i><i class="mote" style="--x:55%;--t:26s;--d:-17s"></i><i class="mote" style="--x:71%;--t:20s;--d:-9s"></i><i class="mote" style="--x:88%;--t:23s;--d:-14s"></i></div>
+    <div class="wrap clinic-grid">
+      <div class="still" data-reveal>
+        <canvas id="still" aria-hidden="true"></canvas>
+        <img class="mark rv" src="assets/logo-mark.webp" width="240" height="233" alt="">
+        <p class="chip"><span>Meggy's Arcade 2 Bldg.</span><span>Brgy 6, San Jose</span></p>
+      </div>
+      <div class="clinic-copy" data-reveal>
+        <p class="eyebrow rv">The clinic</p>
+        <h2 class="h2 rv" id="clinic-h">A calm clinic in the heart of San Jose.</h2>
+        <p class="lede rv">Find us at Meggy's Arcade 2 Bldg., Ricarze St., Brgy 6, San Jose, Antique. No long trip to the city. Just a quiet room, a licensed doctor and time to talk.</p>
+        <ul class="facts rv">
+          <li><span class="k">Hours</span><span class="v">Monday to Saturday · 10:00 AM to 6:00 PM</span></li>
+          <li><span class="k">Community</span><span class="v">Over 2,800 neighbors follow us on Facebook.</span></li>
+        </ul>
+        <div class="cta-row rv">
+          <a class="btn btn-ghost" href="https://maps.app.goo.gl/h6sC9rqUjo1anHFT9" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/people/Radiance-Wellness-Center/61561401756525/" target="_blank" rel="noopener">Visit our Facebook page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="clients" aria-labelledby="clients-h">
+    <div class="wrap">
+      <div class="clients-head" data-reveal>
+        <p class="eyebrow rv">Our clients</p>
+        <h2 class="h2 rv" id="clients-h">Moments at Radiance.</h2>
+      </div>
+      <div class="gallery" data-reveal>
+        <figure class="shot rv"><img src="assets/clients/client-01.webp" width="800" height="1200" loading="lazy" decoding="async" alt="A client smiles during an IV drip in a white tufted chair"></figure>
+        <figure class="shot wide rv"><img src="assets/clients/clients-group.webp" width="1200" height="770" loading="lazy" decoding="async" alt="Smiling guests standing together inside Radiance Wellness Center"></figure>
+        <figure class="shot rv"><img src="assets/clients/client-02.webp" width="800" height="1200" loading="lazy" decoding="async" alt="A client with long curly hair relaxes during an IV drip"></figure>
+        <figure class="shot rv"><img src="assets/clients/client-03.webp" width="800" height="1200" loading="lazy" decoding="async" alt="A client in a light blue top smiles at her IV line"></figure>
+        <figure class="shot rv"><img src="assets/clients/client-04.webp" width="800" height="1200" loading="lazy" decoding="async" alt="Two clients relax side by side during IV drips"></figure>
+        <figure class="shot rv"><img src="assets/clients/client-05.webp" width="800" height="1200" loading="lazy" decoding="async" alt="A client in a white dress sits in a tufted chair"></figure>
+        <figure class="shot rv"><img src="assets/clients/client-06.webp" width="800" height="1200" loading="lazy" decoding="async" alt="A client in a floral top smiles during an IV drip"></figure>
+        <figure class="shot rv"><img src="assets/clients/client-07.webp" width="800" height="1198" loading="lazy" decoding="async" alt="A client in a black shirt relaxes during an IV drip"></figure>
+        <figure class="shot rv"><img src="assets/clients/client-08.webp" width="800" height="1200" loading="lazy" decoding="async" alt="A staff member prepares a client's arm for an IV drip"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div class="faq-side" data-reveal data-live>
+        <p class="eyebrow rv">Questions</p>
+        <h2 class="h2 rv" id="faq-h">Questions we hear every day.</h2>
+        <div class="orbit rv" aria-hidden="true"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" stroke-dasharray="2 7"/><circle cx="60" cy="60" r="38" stroke-opacity=".6"/><circle cx="60" cy="4" r="3" fill="#D8B77F" stroke="none"/></svg></div>
+      </div>
+      <div class="faq-list" data-reveal>
+        <details class="rv"><summary><h3>Will I look fake?</h3><span class="plus" aria-hidden="true"></span></summary><p class="ans">No. We go slowly and start with less. The goal is you, looking rested and fresh, not changed.</p></details>
+        <details class="rv"><summary><h3>Who will do my treatment?</h3><span class="plus" aria-hidden="true"></span></summary><p class="ans">A licensed doctor. You'll meet them at your consultation and can ask anything.</p></details>
+        <details class="rv"><summary><h3>Does it hurt?</h3><span class="plus" aria-hidden="true"></span></summary><p class="ans">Most treatments feel like a quick pinch or light pressure. We'll tell you what you'll feel before we start, and we can pause any time.</p></details>
+        <details class="rv"><summary><h3>How much does it cost?</h3><span class="plus" aria-hidden="true"></span></summary><p class="ans">It depends on the treatment and how much you need. Message us for current rates. You'll get a clear price at your consultation before anything is done.</p></details>
+        <details class="rv"><summary><h3>Can I go back to work after?</h3><span class="plus" aria-hidden="true"></span></summary><p class="ans">For many treatments, yes. Some, like threads or fillers, can leave light swelling or bruising for a few days. The doctor will tell you what to expect.</p></details>
+        <details class="rv"><summary><h3>Do I need to book ahead?</h3><span class="plus" aria-hidden="true"></span></summary><p class="ans">It's best to, so the doctor has time for you. Message us on Facebook and pick a day, Monday to Saturday.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="book" aria-labelledby="book-h" data-live>
+    <div class="wrap">
+      <div class="book-card" data-reveal>
+        <div class="motes" aria-hidden="true"><i class="mote" style="--x:12%;--t:18s;--d:-5s"></i><i class="mote" style="--x:34%;--t:22s;--d:-13s"></i><i class="mote" style="--x:61%;--t:20s;--d:-2s"></i><i class="mote" style="--x:83%;--t:25s;--d:-16s"></i></div>
+        <div class="book-copy">
+          <p class="eyebrow rv">Book</p>
+          <h2 class="h2 rv" id="book-h">Book your consultation.</h2>
+          <p class="lede rv">Tell us what you're interested in. We'll copy your message so you can send it to us on Facebook Messenger in one tap.</p>
+          <ul class="contact rv">
+            <li><span class="k">Visit</span><span>Meggy's Arcade 2 Bldg., Ricarze St., Brgy 6, San Jose, Antique</span></li>
+            <li><span class="k">Hours</span><span>Monday to Saturday · 10:00 AM to 6:00 PM</span></li>
+            <li><span class="k">Chat</span><a href="https://m.me/61561401756525" target="_blank" rel="noopener">Message us on Messenger</a></li>
+          </ul>
+        </div>
+        <div class="rv">
+          <form id="book-form" novalidate>
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Maria Santos" required></div>
+            <div class="row2">
+              <div class="field"><label for="f-treat">Treatment</label>
+                <select id="f-treat" name="treatment" required>
+                  <option>Not sure yet</option>
+                  <option>Botox</option>
+                  <option>Hyaluronic Fillers</option>
+                  <option>Threads</option>
+                  <option>Facials</option>
+                  <option>Brows</option>
+                  <option>IV Therapy</option>
+                  <option>Slimming</option>
+                  <option>Stem Cell</option>
+                  <option>Hair Transplant</option>
+                </select>
+              </div>
+              <div class="field"><label for="f-day">Preferred day</label>
+                <select id="f-day" name="day">
+                  <option>Any day</option>
+                  <option>Monday</option>
+                  <option>Tuesday</option>
+                  <option>Wednesday</option>
+                  <option>Thursday</option>
+                  <option>Friday</option>
+                  <option>Saturday</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="f-note">Anything we should know?</label><textarea id="f-note" name="note" placeholder="Optional"></textarea></div>
+            <button class="btn" type="submit">Copy message and open Messenger <span class="arr" aria-hidden="true">→</span></button>
+            <p class="form-note">Nothing is saved on this website. Your message goes only to the Messenger chat you send.</p>
+          </form>
+          <div class="success" id="book-success" role="status" tabindex="-1">
+            <h3>Almost done.</h3>
+            <p id="success-text">Your message is copied. Messenger is opening now. Paste it in the chat and press send.</p>
+            <textarea id="success-msg" readonly aria-label="Your message"></textarea>
+            <div class="cta-row"><a class="btn" href="https://m.me/61561401756525" target="_blank" rel="noopener">Open Messenger <span class="arr" aria-hidden="true">→</span></a><button class="btn btn-ghost" type="button" id="book-again">Start over</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top" aria-label="Radiance Wellness Center, back to top"><img src="assets/logo-mark.webp" width="52" height="50" alt=""><span class="wm" aria-hidden="true"><span class="wm-1">RADIANCE</span><span class="wm-2">WELLNESS CENTER</span></span></a>
+      </div>
+      <div><h2 class="fh">Visit</h2><p>Meggy's Arcade 2 Bldg.<br>Ricarze St., Brgy 6<br>San Jose, Antique</p></div>
+      <div><h2 class="fh">Hours</h2><p>Monday to Saturday<br>10:00 AM to 6:00 PM</p></div>
+      <div><h2 class="fh">Follow</h2><div class="links"><a href="https://www.facebook.com/people/Radiance-Wellness-Center/61561401756525/" target="_blank" rel="noopener">Facebook</a><a href="https://m.me/61561401756525" target="_blank" rel="noopener">Messenger</a><a href="https://maps.app.goo.gl/h6sC9rqUjo1anHFT9" target="_blank" rel="noopener">Directions</a></div></div>
+    </div>
+    <div class="fine"><p>Results vary from person to person. Your doctor will talk you through what to expect.</p><p>© 2026 Radiance Wellness Center</p></div>
+  </div>
+</footer>
+
+<script>
+(() => {
+'use strict';
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+const smoothstep = (p, e0, e1) => { const t = clamp((p - e0) / (e1 - e0), 0, 1); return t * t * (3 - 2 * t); };
+const easeOut = t => 1 - Math.pow(1 - t, 3);
+function rng(seed) { let s = seed >>> 0; return () => (s = (s * 1664525 + 1013904223) >>> 0) / 4294967296; }
+const MESSENGER = 'https://m.me/61561401756525';
+const reduceMQ = matchMedia('(prefers-reduced-motion: reduce)');
+
+/* ===== the drawn scene: a golden drop falls, lands, and settles into one ring of light ===== */
+function makeScene(cv, cxFrac = () => 0.5) {
+  const ctx = cv.getContext('2d');
+  let W = 1, H = 1;
+  const R = rng(11);
+  const motes = Array.from({ length: 28 }, () => ({ x: R(), y: R(), s: 0.6 + R() * 1.5, d: 0.15 + R() * 0.5, ph: R() * 6.283 }));
+  const splash = Array.from({ length: 16 }, (_, i) => ({ a: i / 16 * 6.283 + R() * 0.35, v: 0.55 + R() * 0.65, s: 0.9 + R() * 1.6 }));
+  const waves = [
+    { t0: 0.570, life: 0.30, k: 2.7, w: 1.2 },
+    { t0: 0.600, life: 0.30, k: 2.1, w: 1.3 },
+    { t0: 0.635, life: 0.30, k: 1.6, w: 1.4 },
+    { t0: 0.675, life: 0.28, k: 1.25, w: 1.4 }
+  ];
+  function resize() {
+    const r = cv.getBoundingClientRect();
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    W = Math.max(1, r.width); H = Math.max(1, r.height);
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function ellipse(x, y, rx, ry) { ctx.beginPath(); ctx.ellipse(x, y, Math.max(0.1, rx), Math.max(0.1, ry), 0, 0, Math.PI * 2); }
+  function drawDrop(x, y, r, sx, sy, alpha) {
+    if (alpha <= 0.001) return;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.translate(x, y);
+    const halo = ctx.createRadialGradient(0, -r * 0.4, 0, 0, -r * 0.4, r * 6);
+    halo.addColorStop(0, 'rgba(244,206,132,.42)');
+    halo.addColorStop(1, 'rgba(244,206,132,0)');
+    ctx.fillStyle = halo;
+    ctx.fillRect(-r * 6, -r * 6.4, r * 12, r * 12);
+    ctx.scale(sx, sy);
+    ctx.beginPath();
+    ctx.moveTo(0, -r * 2.05);
+    ctx.bezierCurveTo(r * 0.32, -r * 1.35, r, -r * 0.62, r, 0);
+    ctx.arc(0, 0, r, 0, Math.PI);
+    ctx.bezierCurveTo(-r, -r * 0.62, -r * 0.32, -r * 1.35, 0, -r * 2.05);
+    ctx.closePath();
+    const body = ctx.createRadialGradient(-r * 0.3, -r * 0.1, r * 0.08, 0, -r * 0.2, r * 1.5);
+    body.addColorStop(0, '#FFF5DC');
+    body.addColorStop(0.35, '#F1CB7E');
+    body.addColorStop(0.75, '#C9974B');
+    body.addColorStop(1, '#9C7036');
+    ctx.fillStyle = body;
+    ctx.fill();
+    ctx.lineWidth = Math.max(0.6, r * 0.06);
+    ctx.strokeStyle = 'rgba(255,242,214,.55)';
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.ellipse(-r * 0.38, -r * 0.28, r * 0.2, r * 0.34, -0.35, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255,255,255,.85)';
+    ctx.fill();
+    ctx.restore();
+  }
+  function draw(p) {
+    const cx = W * cxFrac();
+    const wide = W >= H;
+    const horizon = H * 0.64;
+    const iy = H * 0.8;
+    const y0 = H * 0.17;
+    const unit = Math.min(W, H * 1.5);
+    const r = Math.max(8, unit * 0.0115);
+    const ringR = wide ? Math.min(W * 0.2, H * 0.44) : W * 0.36;
+    const pr = wide ? 0.2 : 0.26;
+    ctx.clearRect(0, 0, W, H);
+
+    /* the water, one continuous milky surface */
+    const top = horizon - H * 0.05;
+    const wg = ctx.createLinearGradient(0, top, 0, H);
+    wg.addColorStop(0, 'rgba(234,228,220,0)');
+    wg.addColorStop(0.16, 'rgba(232,225,216,.9)');
+    wg.addColorStop(1, 'rgba(214,203,190,1)');
+    ctx.fillStyle = wg;
+    ctx.fillRect(0, top, W, H - top);
+
+    /* light pooling on the surface, brighter at the moment of impact */
+    const hit = smoothstep(p, 0.55, 0.6) * (1 - smoothstep(p, 0.62, 0.95));
+    ctx.save();
+    ctx.translate(cx, iy);
+    ctx.scale(1, pr * 1.2);
+    const sh = ctx.createRadialGradient(0, 0, 0, 0, 0, W * 0.55);
+    sh.addColorStop(0, 'rgba(255,250,240,' + (0.55 + hit * 0.35).toFixed(3) + ')');
+    sh.addColorStop(0.5, 'rgba(255,250,240,.18)');
+    sh.addColorStop(1, 'rgba(255,250,240,0)');
+    ctx.fillStyle = sh;
+    ctx.beginPath(); ctx.arc(0, 0, W * 0.55, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+
+    /* the drop's path: straight down the center lane */
+    const fall = clamp((p - 0.06) / (0.565 - 0.06), 0, 1);
+    const dy = y0 + (iy - y0) * (0.3 * fall + 0.7 * fall * fall);
+    const grow = 0.82 + 0.18 * smoothstep(p, 0, 0.06);
+    const wob = (fall > 0 ? Math.sin(fall * 26) * 0.035 : 0) + Math.sin(p * 40) * 0.01;
+    const dAlpha = 1 - smoothstep(p, 0.556, 0.575);
+
+    /* golden light gathering where the drop will land */
+    const near = smoothstep(fall, 0.5, 1) * (1 - smoothstep(p, 0.6, 0.86));
+    const after = smoothstep(p, 0.7, 1);
+    const gold = Math.max(near * 0.55, after * 0.3);
+    if (gold > 0.002) {
+      ctx.save();
+      ctx.translate(cx, iy);
+      ctx.scale(1, pr);
+      const gg = ctx.createRadialGradient(0, 0, 0, 0, 0, ringR * 1.1);
+      gg.addColorStop(0, 'rgba(240,203,126,' + gold.toFixed(3) + ')');
+      gg.addColorStop(1, 'rgba(240,203,126,0)');
+      ctx.fillStyle = gg;
+      ctx.beginPath(); ctx.arc(0, 0, ringR * 1.1, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
+    }
+
+    /* the drop's reflection rising to meet it */
+    if (dAlpha > 0 && fall > 0.45) drawDrop(cx, iy + (iy - dy) * 0.24, r * grow, 1, -0.55, dAlpha * 0.2 * smoothstep(fall, 0.45, 1));
+
+    /* ripples spreading out and fading */
+    for (const w of waves) {
+      const a = (p - w.t0) / w.life;
+      if (a <= 0 || a >= 1) continue;
+      const rr = ringR * w.k * easeOut(a);
+      const al = Math.pow(1 - a, 1.6) * 0.6;
+      ctx.lineWidth = w.w;
+      ellipse(cx, iy - 1, rr, rr * pr); ctx.strokeStyle = 'rgba(255,253,248,' + al.toFixed(3) + ')'; ctx.stroke();
+      ellipse(cx, iy + 1.2, rr, rr * pr); ctx.strokeStyle = 'rgba(150,118,80,' + (al * 0.55).toFixed(3) + ')'; ctx.stroke();
+    }
+
+    /* the signature: one calm ring of light */
+    const ring = smoothstep(p, 0.6, 0.95);
+    if (ring > 0.001) {
+      const rr = ringR * (0.25 + 0.75 * easeOut(clamp((p - 0.6) / 0.33, 0, 1)));
+      ellipse(cx, iy, rr, rr * pr);
+      ctx.lineWidth = 12; ctx.strokeStyle = 'rgba(216,183,127,' + (0.2 * ring).toFixed(3) + ')'; ctx.stroke();
+      ctx.lineWidth = 4.5; ctx.strokeStyle = 'rgba(232,200,140,' + (0.34 * ring).toFixed(3) + ')'; ctx.stroke();
+      ctx.lineWidth = 1.7; ctx.strokeStyle = 'rgba(170,126,60,' + (0.95 * ring).toFixed(3) + ')'; ctx.stroke();
+      ellipse(cx, iy - 1.4, rr, rr * pr);
+      ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(255,252,244,' + (0.85 * ring).toFixed(3) + ')'; ctx.stroke();
+      const inner = smoothstep(p, 0.72, 1);
+      if (inner > 0.001) {
+        ellipse(cx, iy, rr * 0.56, rr * 0.56 * pr);
+        ctx.lineWidth = 1.1; ctx.strokeStyle = 'rgba(170,126,60,' + (0.45 * inner).toFixed(3) + ')'; ctx.stroke();
+      }
+    }
+
+    /* the splash: a small crown of droplets and a rebound */
+    const sa = (p - 0.565) / 0.17;
+    if (sa > 0 && sa < 1) {
+      const ja = clamp((p - 0.582) / 0.12, 0, 1);
+      if (ja > 0 && ja < 1) drawDrop(cx, iy - Math.sin(Math.PI * ja) * H * 0.07, r * 0.5, 1, 1.15, (1 - ja) * 0.95);
+      const ds = unit / 1000 * 2.2;
+      for (const d of splash) {
+        const spread = ringR * 0.38 * d.v * easeOut(sa);
+        const x = cx + Math.cos(d.a) * spread;
+        const y = iy + Math.sin(d.a) * spread * pr - Math.sin(Math.PI * sa) * H * 0.075 * d.v;
+        ctx.beginPath();
+        ctx.arc(x, y, Math.max(0.6, d.s * (1 - sa * 0.5) * ds), 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255,247,232,' + ((1 - sa) * 0.95).toFixed(3) + ')';
+        ctx.fill();
+        ctx.lineWidth = 0.6;
+        ctx.strokeStyle = 'rgba(190,150,85,' + ((1 - sa) * 0.6).toFixed(3) + ')';
+        ctx.stroke();
+      }
+    }
+
+    /* the drop itself, alive on a locked path */
+    if (dAlpha > 0.001) {
+      if (fall > 0.08) {
+        const len = r * 9 * fall;
+        const tg = ctx.createLinearGradient(cx, dy - len, cx, dy - r);
+        tg.addColorStop(0, 'rgba(255,240,205,0)');
+        tg.addColorStop(1, 'rgba(255,236,196,' + (0.35 * dAlpha).toFixed(3) + ')');
+        ctx.fillStyle = tg;
+        ctx.fillRect(cx - r * 0.35, dy - len, r * 0.7, Math.max(0, len - r));
+      }
+      drawDrop(cx, dy, r * grow, (1 - 0.08 * fall) * (1 + wob), (1 + 0.22 * fall) * (1 - wob), dAlpha);
+    }
+
+    /* motes of light in the air */
+    const airH = horizon * 0.95;
+    for (const m of motes) {
+      let y = (m.y * airH - p * m.d * H * 0.35) % airH;
+      if (y < 0) y += airH;
+      const x = m.x * W + Math.sin(m.ph + p * 6) * 12;
+      const al = 0.16 + 0.4 * Math.pow(Math.sin(m.ph + p * 9), 2);
+      ctx.beginPath(); ctx.arc(x, y, m.s, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(255,236,196,' + al.toFixed(3) + ')';
+      ctx.fill();
+    }
+  }
+  return { resize, draw };
+}
+
+
+/* ===== reveals, living loops, hidden tabs ===== */
+$$('[data-reveal]').forEach(c => $$('.rv', c).forEach((el, i) => el.style.setProperty('--i', i)));
+const revealIO = new IntersectionObserver(es => {
+  for (const e of es) {
+    if (!e.isIntersecting) continue;
+    const el = e.target;
+    el.classList.add('in');
+    revealIO.unobserve(el);
+    const items = $$('.rv', el);
+    const retire = () => el.classList.add('settled');
+    if (items.length) setTimeout(retire, 900 + items.length * 90 + 1800); else retire();
+  }
+}, { rootMargin: '0px 0px -10% 0px', threshold: 0.06 });
+$$('[data-reveal], [data-divider]').forEach(el => revealIO.observe(el));
+
+const liveIO = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('live', e.isIntersecting)), { rootMargin: '10% 0px' });
+$$('[data-live]').forEach(el => liveIO.observe(el));
+document.addEventListener('visibilitychange', () => document.body.classList.toggle('paused', document.hidden));
+
+/* ===== the hairline that draws itself beside the treatments ===== */
+const tSec = $('#treatments');
+const hair = $('#hairline-path');
+let hairOn = false, hairW = -1;
+function setHair(v) {
+  if (Math.abs(v - hairW) >= 0.004 || ((v === 0 || v === 1) && v !== hairW)) { hairW = v; hair.style.strokeDashoffset = v.toFixed(3); }
+}
+function updateHair() {
+  if (reduceMQ.matches) { setHair(0); return; }
+  const r = tSec.getBoundingClientRect();
+  setHair(1 - clamp((innerHeight * 0.85 - r.top) / Math.max(1, r.height), 0, 1));
+}
+new IntersectionObserver(es => { hairOn = es[0].isIntersecting; if (hairOn) updateHair(); }).observe(tSec);
+addEventListener('scroll', () => { if (hairOn) updateHair(); }, { passive: true });
+
+/* ===== the clinic still: the hero's resting frame, reused ===== */
+const stillCv = $('#still');
+const still = makeScene(stillCv);
+let stillDrawn = false;
+function drawStill() { still.resize(); still.draw(1); }
+new IntersectionObserver(es => { if (es[0].isIntersecting && !stillDrawn) { stillDrawn = true; drawStill(); } }, { rootMargin: '300px' }).observe(stillCv);
+
+/* ===== the first-visit drop fills by itself and lights the steps in order ===== */
+const visit = $('#visit');
+const holdWrap = $('.hold-wrap');
+const steps = $$('.step', visit);
+const FILL_MS = 2800;
+let hp = 0, hpW = -1, holdRaf = null, holdStart = 0, holdDone = false;
+function setHP(v) {
+  if (Math.abs(v - hpW) >= 0.004 || ((v === 0 || v === 1) && v !== hpW)) {
+    hpW = v;
+    visit.style.setProperty('--hp', v.toFixed(3));
+    steps.forEach((s, i) => s.classList.toggle('lit', v >= (i + 1) / 3 - 0.001));
+  }
+}
+function finishHold() {
+  if (holdRaf !== null) { cancelAnimationFrame(holdRaf); holdRaf = null; }
+  holdDone = true;
+  hp = 1;
+  setHP(1);
+  holdWrap.classList.add('done');
+}
+function holdTick(now) {
+  if (!holdStart) holdStart = now;
+  hp = smoothstep(now - holdStart, 0, FILL_MS);
+  setHP(hp);
+  if (hp < 1 && !reduceMQ.matches) holdRaf = requestAnimationFrame(holdTick);
+  else { holdRaf = null; finishHold(); }
+}
+function playHold() {
+  if (holdDone || holdRaf !== null) return;
+  if (reduceMQ.matches) { finishHold(); return; }
+  holdStart = 0;
+  holdRaf = requestAnimationFrame(holdTick);
+}
+new IntersectionObserver(es => { if (es[0].isIntersecting) playHold(); }, { threshold: 0.6 }).observe(holdWrap);
+
+/* ===== reduced motion, honored live in both directions ===== */
+function pinToFinalStates() {
+  setHair(0);
+  finishHold();
+  $$('[data-reveal], [data-divider]').forEach(el => el.classList.add('in', 'settled'));
+}
+function unpinFinalStates() {
+  hairW = -1;
+  if (hairOn) updateHair(); else setHair(1);
+}
+reduceMQ.addEventListener('change', e => {
+  if (e.matches) pinToFinalStates();
+  else unpinFinalStates();
+});
+
+/* ===== booking: compose, copy, open Messenger ===== */
+const form = $('#book-form');
+const success = $('#book-success');
+const successText = $('#success-text');
+const successMsg = $('#success-msg');
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (!form.reportValidity()) return;
+  const d = new FormData(form);
+  const note = String(d.get('note') || '').trim();
+  const msg = "Hi Radiance! I'd like to book a consultation.\n" +
+    'Name: ' + String(d.get('name')).trim() + '\n' +
+    'Treatment: ' + d.get('treatment') + '\n' +
+    'Preferred day: ' + d.get('day') + (note ? '\nNote: ' + note : '');
+  let copied = false;
+  try { await navigator.clipboard.writeText(msg); copied = true; } catch (err) { copied = false; }
+  successMsg.value = msg;
+  success.classList.toggle('manual', !copied);
+  successText.textContent = copied
+    ? 'Your message is copied. Messenger is opening now. Paste it in the chat and press send.'
+    : 'Messenger is opening now. Copy the message below, paste it in the chat and press send.';
+  form.hidden = true;
+  success.classList.add('show');
+  success.focus({ preventScroll: true });
+  window.open(MESSENGER, '_blank', 'noopener');
+});
+$('#book-again').addEventListener('click', () => {
+  success.classList.remove('show', 'manual');
+  form.hidden = false;
+  form.reset();
+  $('#f-name').focus();
+});
+
+/* ===== resize ===== */
+let rz = null;
+addEventListener('resize', () => {
+  if (rz) return;
+  rz = requestAnimationFrame(() => {
+    rz = null;
+    if (stillDrawn) drawStill();
+    if (hairOn) updateHair();
+  });
+});
+
+if (reduceMQ.matches) pinToFinalStates();
+})();
+</script>
+</body>
+</html>
